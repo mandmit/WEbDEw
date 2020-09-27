@@ -4,7 +4,7 @@
     font-size: 25px;
     color: white;
     text-align: left;
-    padding: 50px;
+    padding: 70px 0 80px 60px;
 }
 
 h2{
@@ -65,6 +65,8 @@ div > span{
     padding: 5px;
     border-radius: 10px;
     margin: 2px;
+    line-height: 3;
+    white-space: nowrap;
 }
 
 
@@ -72,19 +74,18 @@ div > span{
     background-color: #293740;
     font-family: Calibri;
     color: white;
-    padding-left: 30px;
+    padding-left: 0;
 }
 
 div > p > img{
     width: 20px;
     height: 20px;
-    margin: 0 15px 0 15px;
+    margin: 10px 15px 0 0;
 }
 
 .butt1{
     background-color: rgb(149,153,158);
     color: white;
-    margin: 10px;
 }
 
 div > p > a{
@@ -92,11 +93,16 @@ div > p > a{
     text-decoration: none;
 }
 
-div > img{
-    border-radius: 70px;
-    border-bottom: medium solid orangered;
+div > a >img{
+    border-radius: 110px;
+    border: 8px solid orangered;
     float: right;
-    margin-left: 40px;
+    overflow: hidden;
+    margin: 0 125px 0 0;
+}
+
+p > i{
+    color: gray;
 }
 
 .bodystyles{
@@ -120,10 +126,12 @@ div > img{
   height: 300px;
   flex-grow: 5;
   padding: 10px;
+  margin-left: 50px;
 }
 
 .second {
   height: 300px;
+  max-width: 50%;
   flex-grow: 5;
   padding: 10px;
 }
