@@ -6,27 +6,27 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>My CV in html+css form</title>
+        <title>My CV in html+css+js form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="ressets.css">
-        <link rel="stylesheet" href="CSS.css">
+        <link rel="stylesheet" href="css/ressets.css">
+        <link rel="stylesheet" href="css/CSS.css">
     </head>
     <body class="bodystyles">
         <div class="upper1">
-            <a href="practice3.html">
-            <img src="img/iam1.png" alt="" width="220" height="220" title="If you want to go back, just click on me"/>
+            <a href="practice5.html">
+            <img id="image" src="img/iam1.png" alt="" width="220" height="220" title="If you want to go back, just click on me"/>
             </a>
-            <h2>Dmytro Manilo</h2>
+            <h2 id="firstname">Dmytro Manilo</h2>
             <h3><span>Student/beginner programmer</span></h3>
             <p>I like football.I am also interested in playing video games and watching anime.</p>
         </div>
         <div class="backl1 flex-container">
             <div class="first">
-            <p><img src="img/envelope.png" alt=""/>manilodmitrij.02@gmail.com</p>
-            <p><img src="img/geo.png" alt=""/>Vladimirovka,Ukraine</p>
-            <p><img src="img/smartphone.png" alt=""/>+380680478154</p>
-            <p><img src="img/quora.png" alt=""/><a href="https://www.quora.com/profile/Dmitriy-Manilo">quora.com/profile/Dmitriy-Manilo</a></p>
+            <p><span id="email">manilodmitrij.02@gmail.com</span><img src="img/envelope.png" alt=""/></p>
+            <p>Vladimirovka,Ukraine<img src="img/geo.png" alt=""/></p>
+            <p>+380680478154<img src="img/smartphone.png" alt=""/></p>
+            <p><a href="https://www.quora.com/profile/Dmitriy-Manilo">quora.com/profile/Dmitriy-Manilo</a><img src="img/quora.png" alt=""/></p>
             </div>
             <div class="second">
             <p><img src="img/instagram.png" alt=""/><a href="https://www.instagram.com/_man_dmitriy/?hl=ru">instagram.com/_man_dmitriy/?hl=ru</a></p>
@@ -100,5 +100,7 @@ and open the template in the editor.
             </div>
         </div>
         </div>
+        <script src="js/ajax-utils.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
     </body>
 </html>
