@@ -1,0 +1,318 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Goldman', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(img/Fon.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.header {
+    padding: 10px 20% 20px 20%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: linear-gradient(to top, black, grey);
+    width: 100%;
+    height: 100px;
+}
+
+.nameofsite>h1 {
+    font-size: 30px;
+    margin: 20px 100px 0 0;
+}
+
+.image {
+    border-radius: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-menu {
+    margin: 15px 0 0 -200px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.row3 {
+    color: blue;
+}
+
+
+.hovr a:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.row3 a:hover {
+    background-color: lightcoral;
+}
+
+.row2 a:hover {
+    background-color: lightblue;
+}
+
+.row4 a:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+li {
+    padding: 10px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 17% 20px 17%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.genres {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+}
+
+.news-col {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img-slider {
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.prev {
+    transform: rotate(180deg);
+    margin-top: -100px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel-wrapper .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.carousel-wrapper .carousel-item .arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 5.5%;
+    margin-top: 300px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.carousel-wrapper .carousel-item .arrow.arrow-prev {
+    left: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.carousel-wrapper .carousel-item .arrow.arrow-next {
+    right: 0;
+}
+
+.carousel-wrapper .carousel-item.light {
+    color: white;
+}
+
+.carousel-wrapper .carousel-item.light .arrow {
+    background: url(img/next.png) 50% 50%/20pxno-repeat;
+}
+
+@media (max-width: 480px) {
+
+    .carousel-wrapper .carousel-item .arrow,
+    .carousel-wrapper .carousel-item.light.arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+.carousel-wrapper [id^="target-item"] {
+    display: none;
+}
+
+.carousel-wrapper .item-1 {
+    z-index: 2;
+    opacity: 1;
+}
+
+.carousel-wrapper *:target~.item-1 {
+    opacity: 0;
+}
+
+.carousel-wrapper #target-item-1:target~.item-1 {
+    opacity: 1;
+}
+
+.carousel-wrapper #target-item-2:target~.item-2,
+.carousel-wrapper #target-item-3:target~.item-3,
+.carousel-wrapper #target-item-4:target~.item-4,
+.carousel-wrapper #target-item-5:target~.item-5 {
+    z-index: 3;
+    opacity: 1;
+}
+
+.red:after {
+    content: '^Click^';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: lightsalmon;
+    -webkit-transition: 0.3s;
+    transition: 0.3;
+}
+
+.yellow:after {
+    content: '^Click^';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: lightgoldenrodyellow;
+    -webkit-transition: 0.3s;
+    transition: 0.3;
+}
+
+.blue:after {
+    content: '^Click^';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: lightblue;
+    -webkit-transition: 0.3s;
+    transition: 0.3;
+}
+
+.green:after {
+    content: '^Click^';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: lightgreen;
+    -webkit-transition: 0.3s;
+    transition: 0.3;
+}
+
+.grey:after {
+    content: '^Click^';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: lightgrey;
+    -webkit-transition: 0.3s;
+    transition: 0.3;
+}
+
+.brown:after {
+    content: '^Click^';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: burlywood;
+    -webkit-transition: 0.3s;
+    transition: 0.3;
+}
+
+.hvb:hover:after {
+    height: 65%;
+}
+
+.blockgan {
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    padding: 10px;
+    width: 33%;
+    height: 50%;
+}
+
+.wrapper {
+    border-radius: 40px;
+}
+
+.footer {
+    padding: 5px 20% 20px 20%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to top, grey, black);
+    color: white;
+    font-size: 12px;
+    width: 100%;
+    height: 60px;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    padding: 4px;
+}
+
+.links1 {
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+}
+
+.col1,
+.col2,
+.col3 {
+    padding-top: 10px;
+}
