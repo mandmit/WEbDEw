@@ -4,6 +4,24 @@ body {
     font-family: 'Goldman', cursive;
 }
 
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+}
+
+p {
+    margin: 10px;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -85,9 +103,11 @@ li {
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
     width: 100%;
-    height: 200px;
+    height: 210px;
 }
 
 .news-col {
@@ -97,9 +117,10 @@ li {
 }
 
 .img-slider {
-    height: 70%;
-    width: 100%;
+    height: 75%;
+    width: 80%;
     border-radius: 20px;
+    margin: 0 auto;
 }
 
 .prev {
@@ -113,13 +134,12 @@ li {
     display: flex;
     flex-direction: column;
     border-radius: 40px;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
 .carousel-item {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .carousel-wrapper .carousel-item {
@@ -151,14 +171,6 @@ li {
 
 .carousel-wrapper .carousel-item .arrow.arrow-next {
     right: 0;
-}
-
-.carousel-wrapper .carousel-item.light {
-    color: white;
-}
-
-.carousel-wrapper .carousel-item.light .arrow {
-    background: url(img/next.png) 50% 50%/20pxno-repeat;
 }
 
 @media (max-width: 480px) {
@@ -196,7 +208,7 @@ li {
 }
 
 .red:after {
-    content: '^Click^';
+    content: 'Якщо ви хочете відчути драйв та побувати в "шкурі" самого найкрутішого гонщика, тоді Вам сюди. Зробіть все що зможете аби дістатись фінішу найпершим.';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -204,11 +216,11 @@ li {
     height: 0;
     background: lightsalmon;
     -webkit-transition: 0.3s;
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 .yellow:after {
-    content: '^Click^';
+    content: 'Побувати спортсменом в реальному житті тепер можливо кожному. Будьте футболістом, боксером, хокеїстом чи може баскетболістом, все в ваших руках';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -216,11 +228,11 @@ li {
     height: 0;
     background: lightgoldenrodyellow;
     -webkit-transition: 0.3s;
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 .blue:after {
-    content: '^Click^';
+    content: 'Стріляти та виміщувати злість. Часом хочеться це зробити в реальному житті, але є набагато легальніша альтернатива) Будьте солдатом якого заслужив весь світ';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -228,11 +240,11 @@ li {
     height: 0;
     background: lightblue;
     -webkit-transition: 0.3s;
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 .green:after {
-    content: '^Click^';
+    content: 'Зробіть ідеальну версію самого себе. Прокачайте інтелект, силу, спритність або ж удачу. Тут це зробити набагато простіше.';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -240,11 +252,11 @@ li {
     height: 0;
     background: lightgreen;
     -webkit-transition: 0.3s;
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 .grey:after {
-    content: '^Click^';
+    content: 'Ставте світові рекорди в проходженнях цих ігор та змагайтеся зі своїми друзями на звання найспритніших рук в проходженні того чи іншого рівня. ';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -252,11 +264,11 @@ li {
     height: 0;
     background: lightgrey;
     -webkit-transition: 0.3s;
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 .brown:after {
-    content: '^Click^';
+    content: 'Побувати в найнеймовірніших місцях, познайомитися з цікавими персонажами, на стати героєм своєї саги можна не відриваючись від екрану. Повірте...';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -264,27 +276,39 @@ li {
     height: 0;
     background: burlywood;
     -webkit-transition: 0.3s;
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 .hvb:hover:after {
     height: 65%;
+    opacity: 100%;
+}
+
+.hvb {
+    background-color: grey;
+    opacity: 80%;
 }
 
 .blockgan {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     position: relative;
     display: inline-block;
     vertical-align: top;
     overflow: hidden;
-    padding: 10px;
-    width: 33%;
-    height: 50%;
+    margin: 5px;
+    width: 32%;
+}
+
+.icganr {
+    margin-top: 20px;
 }
 
 .wrapper {
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer {
@@ -298,21 +322,53 @@ li {
     height: 60px;
 }
 
-.links {
+.link {
     text-decoration: none;
-    color: white;
     border-radius: 15px;
+}
+
+.links {
+    color: white;
     padding: 4px;
 }
 
 .links1 {
-    text-decoration: none;
     color: black;
-    border-radius: 15px;
+}
+
+.links2 {
+    color: cornsilk;
+}
+
+.stores {
+    display: flex;
+    width: 95%;
+    /* margin: 0 auto; */
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.area {
+    background-color: black;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+a .area:hover {
+    background-color: white;
+    color: black;
 }
 
 .col1,
 .col2,
 .col3 {
     padding-top: 10px;
+}
+
+.aksa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
