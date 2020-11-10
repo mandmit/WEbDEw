@@ -72,6 +72,12 @@ body {
     width: 100%;
 }
 
+.genre-image {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
 .right-column {
     display: flex;
     flex-direction: column;
@@ -91,6 +97,7 @@ body {
     padding: 20px;
     display: flex;
     border-bottom: 1px solid grey;
+    width: 100%;
 }
 
 .text {
@@ -99,4 +106,50 @@ body {
 
 span {
     font-size: 24px;
+}
+
+.tovar {
+    position: relative;
+    display: flex;
+    color: black
+}
+
+.info {
+    display: none;
+    padding: 10px;
+    height: 200px;
+    background-color: lightgrey;
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tovar:hover .info {
+    color: darkolivegreen;
+    display: block;
+    position: absolute;
+    border-radius: 20px;
+    left: 80%;
+    width: 300px;
+}
+
+.tovar:hover {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.aboutgenre {
+    position: absolute;
+    display: block;
+    width: 44%;
+    left: 54%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    height: 92%;
+    opacity: 70%;
+    color: white;
+    border-radius: 0 20px 0 0;
 }
