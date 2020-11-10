@@ -1,108 +1,102 @@
-html,
 body {
-    height: 100%;
-    font-family: 'Goldman', cursive;
-}
-
-h2 {
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: 900;
-}
-
-h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-align: center;
-    font-weight: 800;
-}
-
-p {
-    margin: 10px;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
     background: url(../img/Fon.jpg) no-repeat fixed;
     background-size: cover;
 }
 
-.header {
-    padding: 10px 20% 20px 20%;
+.wraper {
     display: flex;
-    justify-content: space-between;
-    color: white;
-    background: linear-gradient(to top, black, grey);
-    width: 100%;
-    height: 100px;
+    margin: 100px 17% 20px 17%;
+    padding: 20px;
 }
 
-.nameofsite>h1 {
-    font-size: 30px;
-    margin: 20px 100px 0 0;
-}
-
-.main-menu {
-    margin: 15px 0 0 -200px;
-}
-
-.list {
+.left-column {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    width: 15%;
+}
+
+.smal-block1 {
+    padding: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.stores a,
+.genre a {
+    margin: 10px;
     font-size: 25px;
-}
-
-.row3 {
-    color: blue;
-}
-
-.hovr a:hover {
-    background-color: lightgreen;
+    padding: 5px;
     color: black;
 }
 
-.row3 a:hover {
-    background-color: lightcoral;
+.smal-block1:hover,
+.smal-block2:hover {
+    background-color: grey;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
 }
 
-.row2 a:hover {
-    background-color: lightblue;
+.stores a:hover,
+.genre a:hover {
+    background-color: black;
+    color: white;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
 }
 
-.row4 a:hover {
-    background-color: lightgoldenrodyellow;
+.stores {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-li {
+.smal-block2 {
+    padding: 10px;
+    margin: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.genre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.car {
+    padding: 6px;
+    width: 100%;
+    height: 290px;
+    border-radius: 20px 20px 0 0;
+}
+
+.cont {
+    padding: 20px;
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+.text {
     padding: 10px;
 }
 
-.footer {
-    padding: 5px 20% 20px 20%;
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(to top, grey, black);
-    color: white;
-    font-size: 12px;
-    width: 100%;
-    height: 60px;
-}
-
-.link {
-    text-decoration: none;
-    border-radius: 15px;
-}
-
-.links {
-    color: white;
-    padding: 4px;
-}
-
-.col1,
-.col2,
-.col3 {
-    padding-top: 10px;
+span {
+    font-size: 24px;
 }
