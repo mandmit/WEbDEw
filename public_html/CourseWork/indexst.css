@@ -3,6 +3,8 @@ body {
     height: 100%;
     font-family: 'Goldman', cursive;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
@@ -43,9 +45,12 @@ body {
     opacity: 100%;
 }
 
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+}
 
-
-
+#menu__toggle {}
 
 .menu__item:hover {
     background-color: #CFD8DC;
@@ -285,15 +290,18 @@ li {
     flex-direction: column;
     border-radius: 20px;
     position: relative;
-    display: inline-block;
     vertical-align: top;
     overflow: hidden;
     margin: 5px;
     width: 32%;
 }
 
-.blockgan>a {
-    font-size: 40px;
+.blockgan {
+    font-size: 12px;
+}
+
+.blockgan h4 {
+    font-size: 20px;
 }
 
 .blockgan:hover {
@@ -301,14 +309,8 @@ li {
     transition: 1.5s;
 }
 
-.blockgan:h {
-    background-color: lightsalmon;
-    -webkit-transition: 1.5s;
-    transition: 1.5s;
-}
-
 .icganr {
-    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
     width: 100%;
 }
@@ -360,6 +362,7 @@ li {
     display: flex;
     width: 95%;
     justify-content: space-around;
+    text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -402,7 +405,25 @@ a .area:hover {
 
 /*For Adaptive*/
 
-@media (max-width: 1400px) {
+/* @media (max-width: 480px) {
+    .video-slider {
+        height: 1400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-slider {
+        height: 200px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .video-slider {
+        height: 350px;
+    }
+} */
+
+@media (max-width: 1200px) {
 
 
     .hamburger-menu {
@@ -417,7 +438,7 @@ a .area:hover {
         align-items: center;
         position: fixed;
         left: 75%;
-        top: 42px;
+        top: 4%;
         width: 40px;
         height: 40px;
         cursor: pointer;
@@ -503,4 +524,92 @@ a .area:hover {
     .menu__item {
         transition-duration: 0.25s;
     }
+
+    body {
+        width: 100%;
+        background-image: none;
+    }
+
+    .block {
+        margin: 0;
+        padding: 5px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .header {
+        position: fixed;
+        opacity: 40%;
+        z-index: 99;
+    }
+
+    .stores {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .area {
+        margin-top: 5px;
+    }
+
+    .nameofsite>h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .about>h2 {
+        margin-top: 20px;
+    }
+
+    .video-slider {
+        height: 400px;
+    }
+
+    .header,
+    .footer {
+        width: 100%;
+        padding: 0;
+    }
+
+    .blockgan {
+        font-size: 10px;
+    }
+
+    .icganr>img {
+        width: 30px;
+    }
+
+    h4 {
+        font-size: 5px;
+    }
+
+    .footer h4:last-child {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: 5px;
+        padding-top: 5px;
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        padding: 0;
+    }
+
 }
