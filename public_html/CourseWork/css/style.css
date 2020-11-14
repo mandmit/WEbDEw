@@ -1,5 +1,5 @@
 body {
-    background: url(../img/im7.jpg) no-repeat fixed;
+    background: url(../img/im6.jpg) no-repeat fixed;
     background-size: cover;
 }
 
@@ -161,4 +161,61 @@ span {
     opacity: 70%;
     color: white;
     border-radius: 0 20px 0 0;
+}
+
+.tovcont {
+    display: flex;
+
+    overflow: hidden;
+    /*скроем тень*/
+}
+
+.item {
+    height: 350px;
+
+    flex: 20%;
+    /* = flex-basis:20%; */
+
+    transition: flex 300ms ease;
+
+    box-shadow: 0 0 19px 3px #000;
+    margin: 1px;
+    /* красивости тени */
+}
+
+.item:hover {
+    flex: 2 2 400px;
+    background-size: 100% 100%;
+}
+
+#div1 {
+    display: none;
+}
+
+.system {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.system>input {
+    margin: 0 auto;
+    justify-content: center;
+    cursor: pointer;
+    width: 20%;
+}
+
+.about {
+    margin-top: 30px;
+}
+
+.listsys {
+    list-style-type: initial;
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+#div1>h4 {
+    margin-top: 10px;
+    font-weight: 600;
 }
