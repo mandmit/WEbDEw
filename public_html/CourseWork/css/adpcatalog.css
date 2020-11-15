@@ -4,8 +4,22 @@
     }
 
     .wraper {
-        margin: 30px 0 0 10px;
+        margin: 0;
+        margin-top: 50px;
         flex: 1 0 auto;
+        width: 100%;
+    }
+
+    .swiper-slide img {
+        border-radius: 20px;
+    }
+
+    .left-column {
+        display: none;
+    }
+
+    .right-column {
+        width: 100%;
     }
 
     .footer {
@@ -23,8 +37,32 @@
     }
 
     .wraper {
+        margin: 0;
         margin: 20px 0 0 10px;
         flex: 1 0 auto;
+        width: 100%;
+    }
+
+    .genre-image {
+        width: 100%;
+    }
+
+    .left-column {
+        display: none;
+    }
+
+    .right-column {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .text {
+        font-size: 10px;
+    }
+
+    .text span {
+        font-size: 14px;
+        font-weight: 700;
     }
 
     p {
@@ -45,7 +83,6 @@
 
     .item {
         flex: 0%;
-        height: 250px;
     }
 }
 
@@ -56,47 +93,26 @@
     }
 
     .wraper {
-        margin: 0;
-        margin-top: 20px;
+        margin: 50px 0 0 0;
+        padding: 0;
         flex: 1 0 auto;
         width: 100%;
     }
 
-    p {
-        margin: 0;
-        padding: 0;
-        font-size: 8px;
+    .swiper-container {
+        display: none;
     }
 
-    h2 {
-        font-size: 14px;
+    .left-column {
+        display: none;
     }
 
-    h3 {
-        font-size: 12px;
+    .right-column {
+        margin-top: 20px;
+        width: 100%;
     }
 
-    h4 {
-        font-size: 14px;
-    }
-
-    .footer h4 {
-        font-size: 6px;
-    }
-
-    .item {
-        flex: 0%;
-        height: 100px;
-    }
-
-    .listsys li {
-        font-size: 8px;
-    }
-
-    .system>input {
-        font-size: 8px;
-        margin: 0 auto;
-        cursor: pointer;
-        width: 35%;
+    .footer {
+        width: 100%;
     }
 }
