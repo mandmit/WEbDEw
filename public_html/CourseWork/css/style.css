@@ -126,6 +126,7 @@ span {
     display: none;
     padding: 10px;
     height: 200px;
+    z-index: 99;
     background-color: lightgrey;
     -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
